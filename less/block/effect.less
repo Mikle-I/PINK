@@ -1,0 +1,64 @@
+
+/* Файл effect.less */
+@import url(../variebles.less);
+.effect{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    display: none;
+}
+@media (min-width: @tablet-width){
+    .effect{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        
+    }
+    .effect__text{
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        width: 311px;
+        height: 298px;
+        text-align: left;
+        margin-top: 30px;
+    }
+    .effect__text h3{
+        font-size: 30px;
+    }
+    .effect__timer{
+        display: flex;
+        width: 250px;
+        height: 280px;
+        
+    }
+    .effect__timer1{
+        display: flex;
+        position: absolute;
+        margin-top: 112px;
+        margin-left:55px;
+       
+    }
+    .effect__timer2{
+        display: block;
+        position: absolute;
+        margin-top: 54px;
+        margin-left: 18px;
+        z-index: 2;
+    }
+    .effect__timer3{
+        display: block;
+        position: absolute;
+        z-index: 1;
+    }
+
+}
+@media (min-width: @desktop-width){
+    .effect{
+        background-color:#f2f2f2;
+    }
+    .effect__text{
+        width: 535px;
+    }
+}

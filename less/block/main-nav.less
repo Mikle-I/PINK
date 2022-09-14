@@ -1,0 +1,151 @@
+/* Файл main-nav.less */
+@import url(../variebles.less);
+.main-nav{
+    background-color: #283645;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+    height: 342px; 
+    font-style: bold;
+
+
+}
+.main-nav__ul{
+    margin-left: 0%;
+    margin-right: 10%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.main-nav__item{
+    margin: 0%;
+    list-style: none;
+    font-size: 18px;
+    color: white;
+}
+
+.main-nav__item--center{
+    display: flex;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+.main-nav__button{
+    background-color: #283645;
+    border:  none;
+}
+.main-nav__logo-item{
+    display: flex;
+    height: 62px;
+    padding-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.main-nav__line--black{
+    border-bottom:2px solid black;
+    width:100%;
+}
+.main-nav__line--white{
+    border-bottom:2px solid #485461;
+    width:100%;
+}
+.logo__mob{
+    display: block;
+}
+
+.logo__mob:hover{
+    fill: #d22856;
+
+}
+.logo__mob:focus{
+    fill: #d22856;
+}
+.logo__tab{
+    display: none;
+}
+.logo__pc{
+    display: none;
+}
+
+@media (min-width: @tablet-width) {
+    .main-nav {
+      width: auto;
+      padding: 0;
+      height: 328px;
+      z-index: 5;
+    }
+    
+    .main-nav__ul {
+      display: flex;
+      justify-content: space-between;
+      width: 95%;
+      margin-left: 5%;
+      z-index: 5;
+      
+    }
+    .main-nav__line--black{
+        border-bottom:2px solid black;
+        max-width: 100%;
+        
+    }
+    .main-nav__line--white{
+        border-bottom:2px solid #485461;
+        max-width:100%;
+    }
+    .main-nav__logo-item{
+        justify-content: space-between;
+    }
+    .logo__mob{
+        display: none;
+    }
+    .logo__tab{
+        display: block;}
+  }
+  @media (min-width: @desktop-width) {
+    .main-nav {
+      width: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      height: 138px;
+     
+      
+      
+    }
+    
+    .main-nav__ul {
+      display: flex;
+      flex-direction: row;
+      justify-content:space-evenly;
+      align-items: baseline;
+      max-width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin-right: 5%;
+    }
+    .main-nav__logo-item{
+        justify-content: space-between; 
+        width: 320px;
+    }
+    .logo__mob{
+        display: none;
+    }
+    .logo__tab{
+        display: none;}
+    .logo__pc{
+            display: block;}
+    .main-nav__button{
+        display: none;
+    }
+    .main-nav__line--black{
+        display: none;
+    }
+    .main-nav__line--white{
+        display: none;
+    }
+  }

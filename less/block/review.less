@@ -1,0 +1,107 @@
+/* Файл review.less */
+@import url(../variebles.less);
+.review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top:30px;
+    background-color: white;
+    
+}
+.review__1{
+display: flex;
+width: 280px;
+flex-direction: column;
+text-align: center;
+margin: 0 auto;
+}
+.review_hfooter{
+    display: none;
+}
+.review__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 50px;
+    width: 60px;
+    
+}
+
+.button-active{
+    display: flex;
+width: 16px;
+height:16px;
+border-radius: 100%;
+background-color: #ffffff;
+border: 3px solid #283645;
+}
+.review__button-slider_1,
+.review__button-slider_2,
+.review__button-slider_3{
+    border: none;
+    display: flex;
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+    background-color: #bec2c7;
+}
+.review__footer{
+    display: flex;
+    width: 100%;
+}
+.review__quote,
+.review__buttonback,
+.review__buttonup,
+.review__quotes
+{
+    display: none;
+}
+@media (min-width: @tablet-width){
+    .review__1{
+        width: 600px;
+    }
+    .review_p{
+        order:1;
+        font-size: 18px;
+    }
+    .review_h{
+        order:2;
+    }
+    .review_hfooter{
+        display: block;
+        order: 3;
+        font-size: 14px;
+        margin-top: -15px;
+    
+    }
+
+}
+@media (min-width: @desktop-width){
+    .review__quotes{
+        display: block;
+        margin-bottom: 40px;
+    }
+    .review__button{
+        display: none;
+    }
+    .review__pcflex{
+        width: 950px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .review__buttonback,
+    .review__buttonup{
+        display: block;
+        border: none;
+        background-color: white;
+    }
+    .review{
+        margin-bottom: -180px;
+    }
+}

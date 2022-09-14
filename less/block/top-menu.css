@@ -1,0 +1,10 @@
+.top-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: -63px;
+  margin-left: 0px;
+  font-style: bold;
+}

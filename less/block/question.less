@@ -1,0 +1,43 @@
+/* Файл question.less */
+@import url(../variebles.less);
+
+.question{
+    background-color:white;
+    display: flex;
+    flex-direction:row;
+    margin: 0px;
+    padding: 0px;
+    justify-content:center;
+}
+.question_footer{
+display: flex;
+width: 100%;
+}
+.question__text{
+    display: flex;
+    width: 250px; ;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 24px;
+    color:black;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: 300;
+    font-family: "Open Sans";
+    margin-bottom: 10px;
+}
+
+@media (min-width: @tablet-width) {
+    .question__text{
+        width: 500px;
+        font-size: 40px;
+        text-align: center;
+    }
+}
+@media (min-width: @desktop-width){
+    .question__text{
+        width: 500px;
+        font-size: 50px;
+        text-align: center;
+    }
+}

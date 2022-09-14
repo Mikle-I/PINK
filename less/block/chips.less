@@ -1,0 +1,210 @@
+/* Файл chips.less */
+@import url(../variebles.less);
+.chips{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    background-color:#f2f2f2;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+.chips h3{
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Open Sans";
+  text-align: center;
+}
+.chips__1{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+.chips__2{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+.chips__3{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin-bottom: 40px;
+}
+.chips__imgTAB{
+    display: none;
+}
+.chips__img{
+    display: flex;
+}
+.chips__imgscr1{
+    display: none;
+}
+.chips__imgscr2{
+    display: none;
+}
+.chips__imgscr3{
+    display: none;
+}
+.chips__1screen{
+     display: none;
+}
+.chips__1-img{
+     display: none;
+}   
+
+@media (min-width: @tablet-width) {
+    
+    .chips__1screen{
+        display: none;
+    }
+    .chips__1-img{
+        display: none;
+    }
+    
+    
+    .chips{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: -100px;
+        background-color:#f2f2f2;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+    .chips__flextab{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .chips__img{
+        display: flex;
+    }
+    .chips__imgTAB{
+        display: block;
+    }
+    .chips__imgmob{
+        display: none;
+    }
+    .chips__imgscr1{
+    display: block;
+    position: absolute;
+    margin-top:56px ;
+    margin-left:12px ;
+    animation-name: fadeIm-1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    }
+    .chips__imgscr2{
+        display: block;
+    position: absolute;
+    margin-top:56px ;
+    margin-left:12px ;
+    animation-name: fadeIm-2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    }
+    .chips__imgscr3{
+    display: block;
+    position: absolute;
+    margin-top:56px ;
+    margin-left:12px ;
+    animation-name: fadeIm-3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    }
+
+    @keyframes fadeIm-1
+{
+    from        { opacity: 1; }
+    50%         { opacity: 0; }
+    to          { opacity: 0; }
+}
+@keyframes fadeIm-2
+{
+    from        { opacity: 0; }
+    50%         { opacity: 1; }
+    to          { opacity: 0; }
+}
+@keyframes fadeIm-3
+{
+    from        { opacity: 0; }
+    50%         { opacity: 0; }
+    to          { opacity: 1; }
+}
+}
+
+@media (min-width: @desktop-width){
+    
+    .chips{
+        width: 100%; 
+    }
+    .chips__flextab{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 1200px;
+        height: 550px;
+        margin-bottom: -120px;
+        
+    }
+    .chips__imgTAB{
+        display: none;
+    }
+    .chips__imgscr1{
+        display: none;
+    }
+    .chips__imgscr2{
+        display: none;
+    }
+    .chips__imgscr3{
+        display: none;
+    }
+    .chips__1{
+        z-index: 2;
+    }
+    .chips__2{
+        z-index: 2;
+    }
+    .chips__3{
+        z-index: 4;
+    }
+    .chips__1-img{
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        margin-top: -270px;
+        margin-left: 45px;
+    }
+    .chips__zindex{
+        z-index: 2;
+        background-color: #f2f2f2;
+        margin-top: 50px;
+    }
+    .chips__1screen{
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        margin-top: -225px;
+        margin-left: 54px;
+    }
+    .chips h3{
+        font-size: 30px;
+        line-height: 30px;
+        color: #000000;
+        font-weight: 700;
+        font-family: "Open Sans";
+        text-align: center;
+    }
+    .chips p{
+        font-size: 18px;
+    }
+}

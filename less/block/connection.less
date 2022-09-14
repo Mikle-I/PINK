@@ -1,0 +1,81 @@
+/* Файл connection.less */
+@import url(../variebles.less);
+.connection{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.connection__flex{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+}
+.connection__text{
+width: 280px;
+height: 64px;
+font-size: 24px;
+color: #283645;
+font-weight: 300;
+font-family: "Open Sans";
+text-align: center;
+margin-bottom:-10px ;
+}
+.connection__h{
+font-size: 18px;
+color: #283645;
+font-weight: 700;
+font-family: "Open Sans";
+text-align: center;
+margin-bottom:-15px ;
+}
+.connection__redtext{
+    font-size: 24px;
+    color: #d22856;
+    font-weight: 300;
+    font-family: "Open Sans";
+    text-align: center;
+}
+
+@media (min-width: @tablet-width){
+    .connection__flex{
+        display: flex;
+        width: 600px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .connection__text{
+        font-size: 40px;
+        width: 400px;
+        height: 100px;
+        color: #283645;
+        font-weight: 300;
+        font-family: "Open Sans";
+        line-height: 1.2;
+        
+    }
+    .connection__blockflex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .connection__block1,
+    .connection__block2,
+    .connection__block3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+    }
+}
+@media (min-width: @desktop-width){
+    .connection__blockflex{
+        display: flex;
+        width: 1000px;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
