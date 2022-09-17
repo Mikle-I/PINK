@@ -83,7 +83,9 @@ a:focus{
 .logo__pc{
     display: none;
 }
-
+.main-nav__ul--pc{
+    display: none;
+  }
 @media (min-width: @tablet-width) {
     .main-nav {
       width: auto;
@@ -118,8 +120,16 @@ a:focus{
     }
     .logo__tab{
         display: block;}
+
+    .main-nav__ul--pc{
+        display: none;
+    }
   }
   @media (min-width: @desktop-width) {
+    .main-nav__ul--mob_tab{
+        display: none;
+    }
+
     .main-nav {
       width: 100%;
       display: flex;
