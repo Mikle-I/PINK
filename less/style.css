@@ -723,7 +723,13 @@ a:focus {
   width: 280px;
   flex-direction: column;
   text-align: center;
-  margin: 0 auto;
+   margin-left: 20px;
+ 
+}
+
+
+.review-wraper{
+  width: 320px;
 }
 .review_hfooter {
   display: none;
@@ -745,23 +751,26 @@ a:focus {
   background-color: #ffffff;
   border: 3px solid #283645;
 }
-.review__button-slider_1,
-.review__button-slider_2,
-.review__button-slider_3 {
+.review__button-slider{
   border: none;
   display: flex;
   border-radius: 100%;
   width: 13px;
   height: 13px;
-  background-color: #bec2c7;
+  background-color: #212121;
+  opacity: 0.4;
 }
 .review__footer {
   display: flex;
   width: 100%;
 }
-.review__quote,
 .review__buttonback,
-.review__buttonup,
+.review__buttonup {
+  display: block;
+  border: none;
+  background-color: white;
+}
+.review__quote,
 .review__quotes {
   display: none;
 }
@@ -782,6 +791,9 @@ a:focus {
     font-size: 14px;
     margin-top: -15px;
   }
+  .review-wraper{
+    width: 500px;
+  }
 }
 @media (min-width: 1200px) {
   .review__quotes {
@@ -790,6 +802,9 @@ a:focus {
   }
   .review__button {
     display: none;
+  }
+  .review-wraper{
+    width: 750px;
   }
   .review__pcflex {
     width: 950px;
@@ -805,6 +820,9 @@ a:focus {
   }
   .review {
     margin-bottom: -180px;
+  }
+  .carousel-indicators{
+    display: none;
   }
 }
 /* Файл connection.less */
