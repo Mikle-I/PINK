@@ -764,12 +764,9 @@ a:focus {
   display: flex;
   width: 100%;
 }
+
 .review__buttonback,
-.review__buttonup {
-  display: block;
-  border: none;
-  background-color: white;
-}
+.review__buttonup,
 .review__quote,
 .review__quotes {
   display: none;
