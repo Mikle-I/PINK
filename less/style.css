@@ -4,7 +4,7 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: black;
@@ -85,14 +85,7 @@ a:focus {
 .logo__pc {
   display: none;
 }
-.main-nav__ul--pc{
-    display: none;
-  }
-.menu--notvisible{
-  display: none;
-}
 @media (min-width: 660px) {
-  
   .main-nav {
     width: auto;
     padding: 0;
@@ -123,16 +116,8 @@ a:focus {
   .logo__tab {
     display: block;
   }
-  .main-nav__ul--pc{
-    display: none;
-  }
-  .menu--notvisible{
-    display: none;
-  }
-  
 }
 @media (min-width: 1200px) {
-  
   .main-nav {
     width: 100%;
     display: flex;
@@ -172,11 +157,7 @@ a:focus {
   .main-nav__line--white {
     display: none;
   }
-  .main-nav__ul--mob_tab{
-    display: none;
-  }
 }
-
 /* Файл intro.less */
 .intro--fon {
   background-color: #283645;
@@ -197,15 +178,10 @@ a:focus {
   display: flex;
   background-color: rgba(0, 0, 0, 0.3);
   height: 62px;
-  width: 90%;
+  width: 100%;
   padding-left: 10px;
   justify-content: space-between;
   align-items: center;
-  z-index: 5;
-  margin-top: 63px;
-}
-.intro__head--off_menu {
-  margin-top: 63px;
 }
 .intro__picture {
   display: flex;
@@ -304,8 +280,7 @@ a:focus {
     display: flex;
     justify-content: space-between;
     width: 95%;
-    margin-top: 76px;
-    padding-left:5px;
+    margin-top: 11px;
   }
   .intro__picture {
     display: flex;
@@ -329,7 +304,7 @@ a:focus {
     display: block;
     position: absolute;
     margin-left: 361px;
-    margin-top: 128px ;
+    margin-top: 128px;
   }
   .intro__text--H {
     font-size: 40px;
@@ -354,9 +329,6 @@ a:focus {
     display: none;
   }
   .intro__picture2--tab {
-    display: block;
-  }
-  .intro-logo__tab {
     display: block;
   }
 }
@@ -434,7 +406,6 @@ a:focus {
     text-align: center;
   }
 }
-
 /* Файл chips.less */
 .chips {
   display: flex;
@@ -527,8 +498,8 @@ a:focus {
   .chips__imgscr1 {
     display: block;
     position: absolute;
-    margin-top: 56px ;
-    margin-left: 12px ;
+    margin-top: 56px;
+    margin-left: 12px;
     animation-name: fadeIm-1;
     animation-duration: 8s;
     animation-iteration-count: infinite;
@@ -536,8 +507,8 @@ a:focus {
   .chips__imgscr2 {
     display: block;
     position: absolute;
-    margin-top: 56px ;
-    margin-left: 12px ;
+    margin-top: 56px;
+    margin-left: 12px;
     animation-name: fadeIm-2;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -545,8 +516,8 @@ a:focus {
   .chips__imgscr3 {
     display: block;
     position: absolute;
-    margin-top: 56px ;
-    margin-left: 12px ;
+    margin-top: 56px;
+    margin-left: 12px;
     animation-name: fadeIm-3;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -723,13 +694,7 @@ a:focus {
   width: 280px;
   flex-direction: column;
   text-align: center;
-   margin-left: 20px;
- 
-}
-
-
-.review-wraper{
-  width: 320px;
+  margin: 0 auto;
 }
 .review_hfooter {
   display: none;
@@ -751,23 +716,23 @@ a:focus {
   background-color: #ffffff;
   border: 3px solid #283645;
 }
-.review__button-slider{
+.review__button-slider_1,
+.review__button-slider_2,
+.review__button-slider_3 {
   border: none;
   display: flex;
   border-radius: 100%;
   width: 13px;
   height: 13px;
-  background-color: #212121;
-  opacity: 0.4;
+  background-color: #bec2c7;
 }
 .review__footer {
   display: flex;
   width: 100%;
 }
-
+.review__quote,
 .review__buttonback,
 .review__buttonup,
-.review__quote,
 .review__quotes {
   display: none;
 }
@@ -788,9 +753,6 @@ a:focus {
     font-size: 14px;
     margin-top: -15px;
   }
-  .review-wraper{
-    width: 500px;
-  }
 }
 @media (min-width: 1200px) {
   .review__quotes {
@@ -799,9 +761,6 @@ a:focus {
   }
   .review__button {
     display: none;
-  }
-  .review-wraper{
-    width: 750px;
   }
   .review__pcflex {
     width: 950px;
@@ -817,9 +776,6 @@ a:focus {
   }
   .review {
     margin-bottom: -180px;
-  }
-  .carousel-indicators{
-    display: none;
   }
 }
 /* Файл connection.less */
@@ -1014,7 +970,7 @@ a:focus {
 /* Файл textup.less */
 .textup {
   display: flex;
-  flex-direction: row ;
+  flex-direction: row;
   justify-content: center;
   width: 320px;
   font-size: 14px;
@@ -1145,7 +1101,7 @@ a:focus {
   .app__inputblock {
     display: flex;
     flex-direction: row;
-    margin-left: 60px ;
+    margin-left: 60px;
     margin-bottom: 20px;
     justify-content: baseline;
     align-items: baseline;
@@ -1186,7 +1142,7 @@ a:focus {
   .app__inputblock {
     display: flex;
     flex-direction: row;
-    margin-left: 60px ;
+    margin-left: 60px;
     margin-bottom: 50px;
     justify-content: baseline;
     align-items: baseline;
